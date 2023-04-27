@@ -25,6 +25,7 @@ func main() {
 	fmt.Println("hello world")
 	tools.Logger().Infoln("this is a log")
 	engine := gin.Default()
+	engine.Use(tools.Session("go-vhr"))
 	router.InitRouter(engine)
 	engine.Run(":9000")
 }

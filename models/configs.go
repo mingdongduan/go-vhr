@@ -1,7 +1,5 @@
 package models
 
-var CustomConfigs []Config
-
 type Config struct {
 	ID        uint   `gorm:"primary_key" json:"id"`
 	ConfName  string `json:"conf_name"`
@@ -10,7 +8,7 @@ type Config struct {
 }
 
 func InitConfig() {
-	CustomConfigs = FindConfigs()
+	_ = FindConfigs()
 }
 
 func FindConfigs() []Config {

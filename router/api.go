@@ -7,10 +7,13 @@ import (
 )
 
 func InitRouter(engine *gin.Engine) {
-	engine.Use(middleware.JwtApiMiddleWare)
 	engine.POST("/doLogin", controller.Login)
+	engine.GET("/logout", controller.Logout)
 	engine.GET("/hr", controller.GetHrByName)
+	engine.GET("/verifyCode", controller.GetCaptcha)
 
-	group := engine.Group("/system/hr")
-	group.GET("/", controller.GetHrList)
+	system := engine.Group("/system")
+	system.Use(middleware.JwtApiMiddleWare)
+	system.GET("/hr", controller.GetHrList)
+	system.GET("/config/menu", controller.GetMenu)
 }
