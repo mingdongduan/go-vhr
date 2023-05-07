@@ -3,8 +3,8 @@ package models
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
-	"go-vhr/common"
-	"go-vhr/tools"
+	"go-vhr/pkg/common"
+	"go-vhr/pkg/tools"
 )
 
 var DB *gorm.DB

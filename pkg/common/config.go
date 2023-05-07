@@ -2,13 +2,13 @@ package common
 
 import (
 	"encoding/json"
-	"go-vhr/tools"
+	"go-vhr/pkg/tools"
 	"io/ioutil"
 )
 
 type Mysql struct {
-	Server string
-	Port string
+	Server   string
+	Port     string
 	Database string
 	Username string
 	Password string

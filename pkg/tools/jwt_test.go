@@ -8,7 +8,6 @@ import (
 
 const s = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmVfdGltZSI6MTY3MTY0MDA2NjAxMCwidXNlcm5hbWUiOiJhZG1pbiJ9.g9cEIIcld8YOhak01bQIIzcg_o5kltk-SCrmowDZbXc"
 
-
 func TestParseToken(t *testing.T) {
 	token := ParseToken(s)
 	fmt.Println(token)

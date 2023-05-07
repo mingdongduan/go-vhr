@@ -2,8 +2,8 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-vhr/models"
-	"go-vhr/tools"
+	"go-vhr/pkg/models"
+	"go-vhr/pkg/tools"
 	"net/http"
 	"strconv"
 	"time"

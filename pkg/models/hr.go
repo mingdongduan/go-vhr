@@ -27,6 +27,11 @@ type LoginForm struct {
 	Code     string `json:"code"`
 }
 
+type LoginResult struct {
+	Hr    Hr     `json:"hr"`
+	Token string `json:"token"`
+}
+
 func init() {
 	cache = make(map[string][]Hr)
 }

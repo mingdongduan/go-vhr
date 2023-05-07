@@ -6,6 +6,11 @@ type Response struct {
 	Obj    interface{} `json:"obj"`
 }
 
+type ResponsePage struct {
+	Total int64       `json:"total"`
+	Data  interface{} `json:"data"`
+}
+
 func ResponseOK(msg string, obj interface{}) *Response {
 	return &Response{
 		Status: 200,
@@ -20,9 +25,4 @@ func ResponseError(msg string, obj interface{}) *Response {
 		Msg:    msg,
 		Obj:    obj,
 	}
-}
-
-type LoginResult struct {
-	Hr    Hr     `json:"hr"`
-	Token string `json:"token"`
 }

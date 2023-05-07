@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"go-vhr/models"
+	"go-vhr/pkg/models"
 	"net/http"
 )
 

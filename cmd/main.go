@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cobra"
-	"go-vhr/router"
-	"go-vhr/tools"
+	"go-vhr/api/router"
+	"go-vhr/pkg/tools"
 )
 
 var (
